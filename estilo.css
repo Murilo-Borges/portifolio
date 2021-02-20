@@ -2,3 +2,57 @@
 
 
 @import url('https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css');
+
+
+*{
+    margin: 0%;
+    padding: 0%;
+}
+header{
+width: 100%;
+height: 100vh;
+overflow: hidden;
+}
+
+.img-wrapper{
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    background-color: rgba(0,0,0,0.8);
+}
+
+.img-wrapper img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    opacity: 0.5;
+}
+.banner{
+    position: absolute;
+    left: 15%;
+    top: 30%;
+}
+.banner h1{
+    color: #ffffff;
+    font-size: 3.5rem;
+    font-family: "Baloo Da 2", serif;
+    font-weight: 200;
+    text-shadow: .3rem .4rem 2px rgba(0,0,0,.4);
+    line-height: 3.5rem;
+    margin-bottom: 2rem;
+}
+.banner p{
+    font-family: "Josefin Slab", serif;
+    color: #ffffff;
+    font-size: 2rem;
+    text-shadow: .2rem .2rem  rgba(0,0,0,.4);
+    margin-bottom: 2rem;
+}
+.banner button{
+    font-family: "Muli",serif;
+    color: #000;
+    background: #ad5389;  /* fallback for old browsers */
+background: -webkit-linear-gradient(to right, #3c1053, #ad5389);  /* Chrome 10-25, Safari 5.1-6 */
+background: linear-gradient(to right, #3c1053, #ad5389); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
+}
