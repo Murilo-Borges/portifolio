@@ -246,6 +246,7 @@ header {
 /*       -----------------------------------------------conhecimentos----------------------------------------------------   */
 
 .conhecimentos {
+  background-color: #ffffff;
   display: grid;
   grid-template-columns: repeat(16, 1fr);
   grid-template-rows: repeat(6, 6rem);
@@ -253,31 +254,37 @@ header {
 }
 
 .conhecimento:nth-child(1) {
+  background-color: #ffffff;
   grid-column: 4 / 7;
   grid-row: 1 / 3;
 }
 
 .conhecimento:nth-child(2) {
+  background-color: #ffffff;
   grid-column: 3 / 6;
   grid-row: 3 / 5;
 }
 
 .conhecimento:nth-child(3) {
+  background-color: #ffffff;
   grid-column: 4 / 7;
   grid-row: 5 / -1;
 }
 
 .conhecimento:nth-child(4) {
+  background-color: #ffffff;
   grid-column: 11 / 14;
   grid-row: 1 / 3;
 }
 
 .conhecimento:nth-child(5) {
+  background-color: #ffffff;
   grid-column: 12 / 15;
   grid-row: 3 / 5;
 }
 
 .conhecimento:nth-child(6) {
+  background-color: #ffffff;
   grid-column: 11 / 14;
   grid-row: 5 / -1;
 }
@@ -287,6 +294,8 @@ header {
 }
 
 .sessao-header {
+  background-color: rgb(243, 237, 237);
+  box-shadow: 1px 1px 1px gray;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -434,10 +443,12 @@ header {
 .sessao-contato {
   width: 100%;
   height: 100vh;
-  background-color: #272727;
+  background-color:rgb(250, 250, 250);
+  box-shadow: 2rem 1rem 1rem 2rem 2rem rgba(rgb(41, 40, 40));
   display: flex;
   align-items: center;
   justify-content: center;
+  
 }
 
 .contato-wrapper {
@@ -450,7 +461,6 @@ header {
 .contato-left {
   width: 35%;
   background-image: url(imagens/contato2.jpg);
-  background-color: linear-gradient(rgba(15, 15, 15 0.6), rgba(22, 22, 22 0.9));
   background-size: cover;
 }
 
@@ -524,4 +534,10 @@ header {
   text-transform: uppercase;
   width: 100%;
   height: 2rem;
+}
+
+
+.hr{
+  width: 11px;
+  height: 11px;
 }
