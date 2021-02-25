@@ -16,7 +16,7 @@
 }
 
 html {
-  scroll-behavior: smooth ;
+  scroll-behavior: smooth;
 }
 
 .hamburguer {
@@ -667,4 +667,5 @@ footer {
   transition: all 2s;
 }
 
+/*-------------------------------------------------------pre-loader-----------------------------------------------------*/
 
