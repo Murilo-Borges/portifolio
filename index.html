@@ -195,18 +195,18 @@
 
             <div class="contato-right">
                 <h1>Contato</h1>
-                <form class="form" method="POST" action="./email.php">
+                <form class="form" method="POST" action="https://api.staticforms.xyz/submit">
                     <div class="input-group">
                         <input type="text" class="field" id="nome">
-                        <label for="nome" class="field-label">Nome</label>
+                        <label for="nome" name="nome" class="field-label">Nome</label>
                     </div>
                     <div class="input-group">
                         <input type="text" class="field" id="email">
-                        <label for="email" class="field-label">E-mail</label>
+                        <label for="email" name="email" class="field-label">E-mail</label>
                     </div>
                     <div class="input-group">
                         <textarea class="field" id="mensagem"></textarea>
-                        <label for="mensagem" class="field-label">Mensagem</label>
+                        <label for="mensagem" name="mensagem" class="field-label">Mensagem</label>
                     </div>
                     <button type="submit" class=" btn btn-submit">Enviar</button>
                 </form>
@@ -235,7 +235,7 @@
                 <label for="prazo">Prazo</label>
                 <input type="range" name="prazo" id="prazo" min="1" max="10">
                 <label id="preco"> 0,00</label>
-                <button class="btn btn-orcamento" type="submit">Enviar</button>
+               <!-- <button class="btn btn-orcamento" type="submit">Enviar</button>-->
             </form>
         </div>
     </section>
