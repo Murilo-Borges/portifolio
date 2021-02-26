@@ -12,18 +12,28 @@
     <link rel="manifest" href="/site.webmanifest">
 
     <title>Portfolio</title>
-    
-    <script>
-        Alert("Atenção!! este site é apenas um teste, então ele pode conter vários erros e bugs. Futuramente haverá atualizações para correções de bugs");
-    </script> 
+
+
 </head>
 
 <body>
 
 
+    <b:if cond=’data:blog.pageType==&quot;item&quot;’>
+        <div id=’subscribe’>
+
+            <SCRIPT language="JavaScript" type="text/javascript">
+                alert(
+                    "Atenção!! esté site está em fase de teste. provavelmente haverá bugs. Em breve haverá atualizações"
+                    )
+            </SCRIPT>
+
+            <body
+                onunload="alert(‘Atenção!! esté site está em fase de teste. provavelmente haverá bugs. Em breve haverá atualizações‘);">
+        </div>
+    </b:if>
 
 
-   
 
 
 
