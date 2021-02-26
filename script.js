@@ -27,4 +27,4 @@ function atualizarPreco(){
     document.querySelector("#preco").innerHTML = `R$ ${preco.toFixed(2)}`
 }
 
-
+window.alert("Atenção este site é apenas um teste, então ele pode conter vários erros e bugs. Futuramente haverá atualizações para correções de bugs ")
