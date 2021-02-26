@@ -1,9 +1,6 @@
 <?php
 
 if(isset($_POST['email]) && !empty($_POST['email]){
-$mensagem = addslashes($_POST['mensagem']);
- $nome = addslashes($_POST['nome']);
- $email = addslashes($_POST['email]);
 
     &to = "muriloborges088@gmail.com";
 
@@ -20,8 +17,14 @@ $mensagem = addslashes($_POST['mensagem']);
     
         echo("Email enviado com sucesso!");
     }else{
-        echo("Desculpe, o email não pode ser enviado ");
-    }
+        echo("Desculpe, o email não pode ser enviado ")
+
+ $mensagem = addslashes($_POST['mensagem']);
+ $nome = addslashes($_POST['nome']);
+ $email = addslashes($_POST['email]);
+}
+}
+    
 
 
     
