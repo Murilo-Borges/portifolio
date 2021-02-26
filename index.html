@@ -41,7 +41,8 @@
             <div class="banner">
                 <h1>Web Developer & Front End Designer</h1>
                 <p>Murilo Lequesteboumer Borges</p>
-                <a href="https://developer.mozilla.org/pt-BR/docs/Aprender/Front-end_web_developer" target="blank"> <button>Saiba
+                <a href="https://developer.mozilla.org/pt-BR/docs/Aprender/Front-end_web_developer" target="blank">
+                    <button>Saiba
                         mais</button></a>
             </div>
         </header>
@@ -196,18 +197,21 @@
             <div class="contato-right">
                 <h1>Contato</h1>
                 <form class="form" method="POST" action="https://api.staticforms.xyz/submit">
+                    <input type="hidden" name="accessKey" value="57fca92c-9a97-4bd5-810f-9b83054e6049">
+
                     <div class="input-group">
                         <input type="text" class="field" id="nome">
-                        <label for="nome" name="nome" class="field-label">Nome</label>
+                        <label for="nome" name="name" class="field-label">Nome</label>
                     </div>
                     <div class="input-group">
-                        <input type="text" class="field" id="email">
+                        <input type="email" class="field" id="email">
                         <label for="email" name="email" class="field-label">E-mail</label>
                     </div>
                     <div class="input-group">
                         <textarea class="field" id="mensagem"></textarea>
-                        <label for="mensagem" name="mensagem" class="field-label">Mensagem</label>
+                        <label for="textarea mensagem" name="message" class="field-label">Mensagem</label>
                     </div>
+                    <input type="hidden" name="redirectTo" value="https://websdeveloper.unaux.com/">
                     <button type="submit" class=" btn btn-submit">Enviar</button>
                 </form>
             </div>
@@ -235,7 +239,7 @@
                 <label for="prazo">Prazo</label>
                 <input type="range" name="prazo" id="prazo" min="1" max="10">
                 <label id="preco"> 0,00</label>
-               <!-- <button class="btn btn-orcamento" type="submit">Enviar</button>-->
+                <!-- <button class="btn btn-orcamento" type="submit">Enviar</button>-->
             </form>
         </div>
     </section>
