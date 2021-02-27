@@ -1,37 +1,30 @@
 <?php
 
-if(isset($_POST['email]) && !empty($_POST['email]){
+if(isset($_POST{'email'}) && !empty($_POST['email'])){
 
-    &to = "muriloborges088@gmail.com";
+$nome = addslashes($_POST['name']);
+$email = addslashes($_POST['email']);
+$mensagem = addslashes($_POST["message"]);
 
-    $subject = "Contato - Murilo Borges";
-    
-    $body = "Nome: ".$nome. "\n".
-            "Email: ".$email."\n".
-            "Mensagem: ".$mensagem."\n".
-    $header = "From:muriloborges0202@gmail.com"."\r\n".
-            "replay-to: ".$email."\r\n".
-            "X=mailer:PHP/".phpversion();
-    
-    if(mail($to,$subject,$body,$header)){
-    
-        echo("Email enviado com sucesso!");
-    }else{
-        echo("Desculpe, o email não pode ser enviado ")
 
- $mensagem = addslashes($_POST['mensagem']);
- $nome = addslashes($_POST['nome']);
- $email = addslashes($_POST['email]);
+
+$to = "muriloborges0202@gmail.com";
+$subject = "Contato Webs Devoloper";
+$body = "Nome: " .$nome. "\n";
+        "Email: " .$email. "\n";
+        "mensagem: ".$mensagem;
+
+$header = "from:muriloborges088@gmail.com"."\r\n"."reply-to:".$email."\r\n"."X=Mailer:PHP/".phpversion();
+
+
+if(mail($to,$subject,$body,$header)){
+    echo("E-mail enviado com sucesso!");
+
 }
+else{
+    echo("Desculpe, o E-mail não pode ser enviado");
+
 }
-    
 
-
-    
-
-
-
-
-
-
+}
 ?>
