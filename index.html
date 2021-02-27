@@ -23,7 +23,8 @@
 
             <SCRIPT language="JavaScript" type="text/javascript">
                 alert(
-                    "Atenção!! esté site está em fase de teste. provavelmente haverá bugs. Em breve haverá atualizações")
+                    "Atenção!! esté site está em fase de teste. provavelmente haverá bugs. Em breve haverá atualizações"
+                )
             </SCRIPT>
 
             <body
@@ -208,21 +209,19 @@
 
             <div class="contato-right">
                 <h1>Contato</h1>
-                <form class="form" method="POST" action="https://api.staticforms.xyz/submit">
-                    <input type="hidden" name="accessKey" value="57fca92c-9a97-4bd5-810f-9b83054e6049">
+                <form class="form" method="POST" action="email.php">
 
                     <div class="input-group">
-                        <input type="text" class="field" id="nome">
-                        <label for="nome" name="name" class="field-label">Nome</label>
+                        <input name="name" class="field" placeholder="Nome">
+
                     </div>
                     <div class="input-group">
-                        <input type="email" class="field" id="email">
-                        <label for="email" name="email" class="field-label">E-mail</label>
-                        <!---->
+                        <input name="email" class="field" placeholder="E-mail">
+
                     </div>
                     <div class="input-group">
-                        <textarea class="field" id="mensagem"></textarea>
-                        <label for="textarea mensagem" name="message" class="field-label">Mensagem</label>
+                        <textarea class="field" name="message" placeholder="Mensagem"></textarea>
+
                     </div>
 
                     <button type="submit" class=" btn btn-submit">Enviar</button>
