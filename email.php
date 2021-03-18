@@ -1,4 +1,4 @@
- <?phpversion();   
+<?phpversion();   
 
 
 
@@ -10,7 +10,7 @@ if (isset($_POST{'email'}) && !empty($_POST['email'])) {
 
 
     $to = "muriloborges0202@gmail.com";
-    $subject = "Contato Webs Devoloper";
+    $subject = "Contato Web Developer";
     $body = "Nome: " . $nome . "\n" .
         "Email: " . $email . "\n" .
         "mensagem: " . $mensagem;
@@ -28,4 +28,4 @@ if (isset($_POST{'email'}) && !empty($_POST['email'])) {
 }
 
 
-?>;
+?>
