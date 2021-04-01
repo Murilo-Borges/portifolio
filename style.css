@@ -73,14 +73,20 @@ header .coluna-esquerda{
 header .coluna-direita{
     flex-basis: 60%;
     text-align: center;
+   transition: all 1s ;
+   border-bottom: 1px solid blue ;
+   
 }
+
+
+
 
 header .coluna img{
     max-width: 100%;
 }
 header .coluna h1{
-    font-size: 1.5rem;
-    color:var(--corTextoSecudaria);
+    font-size: 1.9rem;
+    color:#3c3c3c;
 }
 header .coluna p{
     font-size: 1rem;
@@ -188,34 +194,65 @@ main .coluna section ul li strong{
     display: none;
 
 }
+
+header .container{
+    position: relative;
+}
+
 label{
-    border: solid 2px #000000;
-    padding: 10px ;
-border-radius: 3px;
-background-color:#0b0b0c;
-text-decoration: none;
-color: #fff;
-font-family:-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
-opacity: .5;
-transition: all 1s;
-margin: 10px;
+    position: absolute;
+    top: 40px;
+    right: 30px;
+    width: 80px;
+    height: 30px;
+    background-color: #d4e9ff;
+    border-radius: 20px;
+    cursor: pointer;
+
+}
+#ativar-dark{
+top: 3px;
+height: 6px;
+left: 2px;
+width: 7px;
+color: #45dbfc;
+background-color: #030944;
+border-radius: 100%;
+padding: 9px;
+/* box-sizing: border-box; */
 position: absolute;
-right: 200px;
+cursor: pointer;
+transition: .8s;
 }
 
-label:hover{
-    opacity: 1;
-    color:#fff4f4;
-    text-decoration: transparent;
-
-    transition: all 1s;
+.ativar-dark:checked ~ .dark-mode #ativar-dark{
+    transition: .8s;
+    margin-left: 49px;
+   
 }
+
+
+.ativar-dark:checked ~ .dark-mode label{
+    background-color: rgb(0, 0, 0);
+}
+
+.ativar-dark:checked ~ .dark-mode span{
+    transition: .8s;
+    margin-left: 4px;
+   
+}
+
 
 .ativar-dark:checked ~ .dark-mode{
-    --corBackgroundPrimaria: #000;
-    --corBackgroundSecundaria: #000;
+   
     --corTextPrimaria:#fff;
     --corTextoSecudaria:#fff;
+    --corBackgroundPrimaria: #45dbfc;
+    --corBackgroundSecundaria: #04133d;
+    --corBackgroundDark:#0e0e0e;
+    --corTextPrimaria:#636363;
+    --corTextoSecudaria:#000;
+
 }
 .ativar-dark:checked ~ .dark-mode header{
     background-color:var(--corBackgroundSecundaria) ;
@@ -229,7 +266,32 @@ label:hover{
 .ativar-dark:checked ~ .dark-mode main{
     background-color:var(--corBackgroundSecundaria) ;
 } 
+.ativar-dark:checked ~ .dark-mode main .coluna section{
+    color:#a0a0a0;
+}
 
+.ativar-dark:checked ~ .dark-mode header .coluna-direita a{
+    color: #a0a0a0;
+}
+
+
+@keyframes aumentarLargura{
+    from{
+        width: 0;
+    }
+    to{
+        width: 100%;
+    }
+}
+
+@keyframes aumentarAltura{
+    from{
+        height: 0;
+    }
+    to{
+        height: 100%;
+    }
+}
 
 
 
@@ -240,7 +302,7 @@ label:hover{
         flex-wrap: wrap;
         align-items: flex-start;
         justify-content: space-between;
-        box-shadow: 2px 2px 5px grey;
+       
     border-radius: 5px;
     }
     footer nav .redes-sociais {
@@ -258,6 +320,7 @@ label:hover{
     header .coluna-direita a{
         transition: all 0.8s;
         opacity: .5;
+        color:#a0a0a0 ;
     }
 
     header .coluna-direita a:hover{
@@ -287,4 +350,56 @@ label:hover{
         display: initial;
     }
     
+    main .coluna section{
+        /* border: 2px solid #d4e9ff; */
+        border: 2px solid transparent;
+        padding: 20px;
+        position: relative;
+    }
+
+    main .coluna section span{
+        position: absolute;
+        display: block;
+        width: 0;
+        height: 0;
+        border: 2px solid transparent;
+    }
+    main .coluna section .topo-direita{
+        top: -2px;
+        left: -3.3px;
+        animation-name: aumentarLargura, aumentarAltura;
+        animation-duration: 1s, 1s;
+        animation-delay: 2s, 3s;
+        animation-fill-mode: forwards;
+        border-top-color: #0e3054;
+        border-right-color: #0e3054;
+    }
+    main .coluna section .baixo-esquerda{
+        bottom: -2px;
+        right: -2px;
+        animation-name: aumentarLargura, aumentarAltura;
+        animation-duration: 1s, 1s;
+        animation-delay: 2s, 3s;
+        animation-fill-mode: forwards;
+        border-bottom-color: #0e3054;
+        border-left-color: #0e3054;
+    }
+    main .coluna{
+        padding: 0;
+    }
+    footer nav .redes-sociais li{
+        margin: 0  14px;
+        text-align: center;
+        display: initial;
+    }
+    
 }
+
+
+/*sorteio*/
+
+
+.ativar-dark:checked ~ .dark-mode #sorteio{
+    color:#a0a0a0 ;
+}
+

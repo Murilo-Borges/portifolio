@@ -6,6 +6,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Meu perfil</title>
+    <link rel="shortcut icon" href="./--imagens/usuario-de-perfil.png" type="image/x-icon">
 
 
     <link rel="stylesheet" href="style.css">
@@ -18,12 +19,14 @@
     <div class="dark-mode">
 
         <!-- CABEÇALHO -->
-        
+
         <header>
-            
+
             <div class="container">
-                <label for="ativar-dark">ativar dark</label>
-        
+                <label for="ativar-dark">
+                    <span id="ativar-dark"></span>
+                </label>
+
 
 
                 <div class="linha">
@@ -31,7 +34,7 @@
                     <!-- CAIXA FOTO DE PERFÍL -->
                     <div class="coluna coluna-esquerda">
                         <figure>
-                            <img src="./.imagens/murilo.jpg" alt="Hudson Carolino">
+                            <img src="./--imagens/murilo-png.png" type="image/.png" alt="Murilo-borges">
                             <figcaption class="hidden">Murilo Lequesteboumer Borges</figcaption>
                         </figure>
                     </div>
@@ -39,19 +42,21 @@
                     <!-- INFORMAÇÕES PESSOAIS -->
                     <div class="coluna coluna-direita">
 
-                        <h1>Murilo Borges</h1>
+                        <h1>Murilo Lequesteboumer Borges</h1>
                         <p>Estudante de Programação</p>
 
                         <ul>
                             <li>
-                                <a href="mailto:muriloborges0202@gmail.com"><strong>E-mail:</strong>
+                                <a href="mailto:muriloborges0202@gmail.com" target="_blank"><strong>E-mail:</strong>
                                     muriloborges0202@gmail.com</a>
                             </li>
                             <li>
-                                <a href="tel:5534991748687"><strong>Telefone: </strong>(34) 9-9174-8687</a>
+                                <a href="tel:5534991748687" target="_blank"><strong>Telefone: </strong>(34)
+                                    9-9174-8687</a>
                             </li>
                             <li>
-                                <a href="#"><strong>Endereço: </strong>Av. José Venâncio de Queiroz, 233, Santa Vitória
+                                <a href="mailto: José Venâncio de Queiroz 233 Santa Vitória
+                                 MG"><strong>Endereço: </strong>Av. José Venâncio de Queiroz, 233, Santa Vitória
                                     - MG</a>
                             </li>
                         </ul>
@@ -72,13 +77,20 @@
                     <div class="coluna coluna-esquerda">
 
                         <section>
+                            <span class="topo-direita"></span>
                             <h2>Perfil Estudantil</h2>
                             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Illo quibusdam facere obcaecati
                                 fugiat, doloremque magni porro, dolorum vero odit nostrum numquam sint veniam esse.
-                                Nesciunt totam voluptas odio autem laboriosam. </p>
+                                Nesciunt totam voluptas odio autem laboriosam.
+                            </p>
+                            <span class="baixo-esquerda"></span>
+
                         </section>
 
+
                         <section>
+                            <span class="topo-direita"></span>
+
                             <h2>Especialidades</h2>
                             <ul>
                                 <li>HTML 5</li>
@@ -86,9 +98,13 @@
                                 <li>Java Script</li>
 
                             </ul>
+                            <span class="baixo-esquerda"></span>
+
                         </section>
 
                         <section>
+                            <span class="topo-direita"></span>
+
                             <h2>Cursos</h2>
                             <ul>
                                 <li>HTML 5 - Kenzie Academy</li>
@@ -98,6 +114,8 @@
                                 <li>Javascript - Curso em Video</li>
 
                             </ul>
+                            <span class="baixo-esquerda"></span>
+
                         </section>
 
                     </div>
@@ -106,6 +124,8 @@
                     <div class="coluna coluna-direita">
 
                         <section>
+                            <span class="topo-direita"></span>
+
                             <h2>Experiências</h2>
                             <ul>
                                 <li>
@@ -129,9 +149,13 @@
 
 
                             </ul>
+                            <span class="baixo-esquerda"></span>
+
                         </section>
 
                         <section>
+                            <span class="topo-direita"></span>
+
                             <h2>Formação</h2>
                             <ul>
                                 <li>
@@ -148,6 +172,8 @@
                                 </li>
 
                             </ul>
+                            <span class="baixo-esquerda"></span>
+
                         </section>
 
                     </div>
@@ -163,14 +189,22 @@
                 <nav>
                     <ul class="info-contato">
                         <li>
-                            <a href="muriloborges0202@gmail.com"><strong>E-mail:</strong> muriloborges0202@gmail.com</a>
+                            <a href="mailto:muriloborges0202@gmail.com" target="blank"><strong>E-mail:</strong>
+                                muriloborges0202@gmail.com</a>
                         </li>
                         <li>
-                            <a href="tel:5534991748687"><strong>Telefone:</strong> (34)9-9174-8687</a>
+                            <a href="tel:5534991748687" target="blank"><strong>Telefone:</strong> (34)9-9174-8687</a>
                         </li>
                         <li>
-                            <a href="#"><strong>Endereço:</strong> Av. José Venâncio de Queiroz, 233, Morada Nova, Santa
+                            <a href="mailto:Av. José Venâncio de Queiroz, 233, Morada Nova, Santa
+                            Vitória - MG" target="blank"><strong>Endereço:</strong> . José Venâncio de Queiroz, 233,
+                                Morada Nova,
+                                Santa
                                 Vitória - MG</a>
+
+                        </li>
+                        <li>
+                           <strong id="sorteio">Se você quiser entrar na minha página de sorteio para realizar um sorteio, <a href="./appsorteio-master/sorteio.html" target="_blank"> clique aqui</strong></a>
                         </li>
                     </ul>
                 </nav>
@@ -180,19 +214,19 @@
 
                         <li>
                             <a href="https://github.com/Murilo-L-Borges" target="blank">
-                                <img src="./.imagens/github.png" alt="Github">
+                                <img src="./--imagens/github.png" alt="Github">
                                 <p>Github</p>
                             </a>
                         </li>
                         <li>
                             <a href="https://www.instagram.com/murilo___borges/" target="blank">
-                                <img src="./.imagens/instagram.png " alt="Instagram">
+                                <img src="./--imagens/instagram.png " alt="Instagram">
                                 <p>Instagram</p>
                             </a>
                         </li>
                         <li>
                             <a href="https://www.youtube.com/channel/UCWgvNikJt65XK9CS3gtNQ6w" target="blank">
-                                <img src="./.imagens/youtube.png" alt="Youtube">
+                                <img src="./--imagens/youtube.png" alt="Youtube">
                                 <p>Youtube</p>
                             </a>
                         </li>
