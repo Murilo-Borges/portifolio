@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../appsorteio-master/estilo.css">
+    <link rel="shortcut icon" href="../--imagens/icone.jpg" type="image/x-icon">
+    <title>Sorteio</title>
+</head>
+<body>
+
+    <header>
+       
+        <h1>Faça o sorteio de números ou de nomes de uma maneira rápida e <br> <strong>gratuita !!</strong></h1>
+    </header>
+
+    <main class="app">
+        <h3>Sortear números</h3>
+        <p>Crie o sorteio de números facilmente utilizando essa opção, você poderá 
+            salvar o sorteio e compartilhar o link com outras pessoas.</p>
+        <hr>
+
+        <label for="selecaoNome"  >Selecionar o sorteio por nome</label>
+        <input type="checkbox" checked id="selecaoNome">
+
+        <div class="formulario">
+           
+            <div class="input-model-numeros">
+                <label for="qtdResultados">O resultado terá quantos números?</label>
+                <input type="number" placeholder="2" name="qtdResultados" id="qtdResultados">
+                
+                <label for="inBetweenNumber">Entre</label>
+                <input type="number" placeholder="1" name="inBetweenNumber" id="inBetweenNumber">
+                
+                <label for="andNumber">e</label>
+                <input type="number"  placeholder="10" name="andNumber" id="andNumber">
+            </div>
+
+            <div class="input-model-nomes">
+                <label for="nomes">Adicione os nomes</label>
+                <textarea id="nomes" 
+                placeholder="Adicione os nomes separados por vírgula (João, Maria, José)"></textarea>
+            </div>
+
+            <button id="buttonSortear">Sortear</button>
+            <button id="buttonLimpar">Limpar</button>
+
+            <div class="resultado" id="painelResultado">
+                <span id="btnFecharResultado">X</span>
+                <h3>Resultado:</h3>
+                <p id="resultado">1-2-3-4</p>
+            </div>
+
+        </div>
+    </main>
+    
+    <footer>
+
+        <div class="container">
+
+            <nav>
+                <ul class="info-contato">
+                    <li>
+                        <a href="mailto:muriloborges0202@gmail.com" target="blank"><strong>E-mail:</strong>
+                            muriloborges0202@gmail.com</a>
+                    </li>
+                    <li>
+                        <a href="tel:5534991748687" target="blank"><strong>Telefone:</strong> (34)9-9174-8687</a>
+                    </li>
+                    <li>
+                        <a href="mailto:Av. José Venâncio de Queiroz, 233, Morada Nova, Santa
+                        Vitória - MG" target="blank"><strong>Endereço:</strong> . José Venâncio de Queiroz, 233,
+                            Morada Nova,
+                            Santa
+                            Vitória - MG</a>
+
+                    </li>
+                    
+                </ul>
+            </nav>
+
+            <nav>
+                <ul class="redes-sociais">
+
+                    <li>
+                        <a href="https://github.com/Murilo-L-Borges" target="blank">
+                            <img src="../--imagens/github.png" alt="Github">
+                            
+                        </a>
+                    </li>
+                    <li>
+                        <a href="https://www.instagram.com/murilo___borges/" target="blank">
+                            <img src="../--imagens/instagram.png " alt="Instagram">
+                            
+                        </a>
+                    </li>
+                    <li>
+                        <a href="https://www.youtube.com/channel/UCWgvNikJt65XK9CS3gtNQ6w" target="blank">
+                            <img src="../--imagens/youtube.png" alt="Youtube">
+                          
+                        </a>
+                    </li>
+
+                </ul>
+            </nav>
+
+        </div>
+
+    </footer>
+    <script src="script.js"></script>
+</body>
+</html>
